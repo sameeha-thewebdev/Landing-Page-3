@@ -10,6 +10,7 @@ html , body{
     width: 100%;
     background-color: #000;
     overflow-y: hidden;
+    cursor: none;
 }
 
 #main{
@@ -150,3 +151,23 @@ html , body{
     }
 }
 
+.blank{
+    position: absolute;
+    height: 490px;
+    width: 330px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+}
+
+#cursor{
+    display: none;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    z-index: 200;
+}
