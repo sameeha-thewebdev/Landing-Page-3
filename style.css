@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    overflow-y: hidden;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 30px;
+}
+
+#nav h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.sometext{
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    height: 480px;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.sometext h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
+    opacity: .9;
+    font-size: 17px;
+}
+
+#main img{
+    position: absolute;
+    height: 490px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+#scroll-div1{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div1 h1{
+    font-size: 130px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 900;
+   animation-name: scrollreverse;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+#scroll-div1::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div2{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div2 h1{
+    font-size: 130px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 900;
+   color: transparent;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #fff;
+   z-index: 100;
+   animation-name: scrollreverse;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div3{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div3 h1{
+    font-size: 130px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 900;
+   animation-name: scroll;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translate(0%);
+    }
+    100%{
+        transform: translate(calc(-100% - 25px));
+    }
+}
+
+@keyframes scrollreverse {
+    0%{
+        transform: translate(calc(-100% - 25px));
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
